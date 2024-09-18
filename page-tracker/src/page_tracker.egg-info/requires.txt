@@ -10,3 +10,4 @@ isort
 pylint
 pytest
 pytest-timeout
+requests

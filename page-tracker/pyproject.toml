@@ -22,4 +22,5 @@ dev = [
     "pylint",           # code style
     "pytest",           # testing
     "pytest-timeout",   # testing
+    "requests",         
 ]
