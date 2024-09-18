@@ -20,7 +20,6 @@ services:
     command: "gunicorn page_tracker.app:app --bind 0.0.0.0:8080" # This command will take precedence over the Dockerfile command
   
   # use profiles to run an  e2e (end to end) test service conditionally.
-  # 
   test-service:
     profiles:
       - testing
@@ -35,7 +34,7 @@ services:
     depends_on:
       - redis-service
       - web-service
-    command: > # need ti change directory because the mount is in src/
+    command: > # need to change directory because the mount is in src/
       sh -c 'pwd && cd /home/realpython &&
       python -m pytest test/e2e/ -vv
       --redis-url=$$REDIS_URL
