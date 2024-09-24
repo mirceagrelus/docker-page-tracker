@@ -1,5 +1,5 @@
 name: Continuous Integration
-# runs the jobs below when 1) opening / updating a pull request 2) merging a feature branch into main
+# runs the jobs below when 1) opening / changing a pull request against main 2) pushing code or merging a feature branch into main
 
 on: 
   pull_request:
